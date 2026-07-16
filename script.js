@@ -3,7 +3,7 @@ const weddingInfo = {
     bridesName: "Hoàng Anh",
     weddingDate: "2026-08-02T14:45:00", // Countdow tới 14:45 02/08/2026
     dateString: "02/08/2026",
-    heroTitle: "LỄ THÀNH HÔN",
+    heroTitle: "LỄ VU QUY",
     musicUrl: "assets/music/Lễ Đường.mp3",
     mapUrl: "https://maps.app.goo.gl/yGSiw5LjDviwe3M29?g_st=ic",
 
@@ -34,16 +34,16 @@ const weddingInfo = {
             title: "Tiệc Cưới",
             date: "Thứ Bảy - 01/08/2026<br><small>(19 tháng 06 năm Bính Ngọ)</small>",
             time: "17:30",
-            location: "HỘI TRƯỜNG PHỐ ĐÔNG HOA",
-            address: "Phường Hoa Lư - Tỉnh Ninh Bình",
+            location: "TƯ GIA NHÀ GÁI",
+            address: "Thôn Nội Phật - Xã Bình Xuyên - Tỉnh Phú Thọ",
             icon: "glass"
         },
         {
-            title: "Lễ Thành Hôn",
+            title: "Lễ Vu Quy",
             date: "Chủ Nhật - 02/08/2026<br><small>(20 tháng 06 năm Bính Ngọ)</small>",
-            time: "14:45",
-            location: "HỘI TRƯỜNG PHỐ ĐÔNG HOA",
-            address: "Phường Hoa Lư - Tỉnh Ninh Bình",
+            time: "09:00",
+            location: "TƯ GIA NHÀ GÁI",
+            address: "Thôn Nội Phật - Xã Bình Xuyên - Tỉnh Phú Thọ",
             icon: "ring"
         }
     ],
@@ -52,8 +52,8 @@ const weddingInfo = {
     banking: {
         main: {
             bank: "Vietcombank",
-            name: "Dinh NGOC TIEN ",
-            number: "0221000063727",
+            name: "HOANG ANH",
+            number: "0123456789",
             qr: "assets/images/1784171844747_4352902273896587581_4352902273896587581_c39c9ebeedf5d2f6ee05a3a04024fd19(1).jpg"
         }
     },
@@ -436,30 +436,30 @@ function initScrollReveal() {
 function initPetals() {
     const container = document.getElementById('petals-container');
     if (!container) return;
-    
+
     // Mật độ rơi vừa phải
-    const petalCount = 20; 
-    
+    const petalCount = 20;
+
     for (let i = 0; i < petalCount; i++) {
         const petal = document.createElement('div');
         petal.classList.add('petal');
-        
+
         // Random size từ 8px - 14px
         const size = Math.random() * 6 + 8;
         petal.style.width = `${size}px`;
         petal.style.height = `${size}px`;
-        
+
         // Vị trí ngang random toàn màn hình
         petal.style.left = `${Math.random() * 100}vw`;
-        
+
         // Thời gian rơi chậm nhẹ nhàng (12s - 20s)
         const fallDuration = Math.random() * 8 + 12;
         // Delay âm để hoa có mặt sẵn trên màn ngay khi load 
-        const fallDelay = Math.random() * -15; 
-        
-        petal.style.animationDuration = `${fallDuration}s, ${fallDuration/2}s`;
+        const fallDelay = Math.random() * -15;
+
+        petal.style.animationDuration = `${fallDuration}s, ${fallDuration / 2}s`;
         petal.style.animationDelay = `${fallDelay}s, ${fallDelay}s`;
-        
+
         container.appendChild(petal);
     }
 }
