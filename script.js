@@ -341,7 +341,7 @@ function initRSVP() {
         btn.innerText = "Đang gửi...";
 
         try {
-            const response = await fetch('https://be-thiepcuoi-atien.onrender.com/api/wishes', {
+            const response = await fetch('https://be-thiepcuoi-nhagai.onrender.com/api/wishes', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, message })
@@ -371,7 +371,7 @@ async function renderWishes() {
     if (!container) return;
 
     try {
-        const response = await fetch('https://be-thiepcuoi-atien.onrender.com/api/wishes');
+        const response = await fetch('https://be-thiepcuoi-nhagai.onrender.com/api/wishes');
         if (!response.ok) throw new Error("API failed");
         const wishes = await response.json();
 
