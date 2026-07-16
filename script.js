@@ -5,7 +5,7 @@ const weddingInfo = {
     dateString: "02/08/2026",
     heroTitle: "LỄ VU QUY",
     musicUrl: "assets/music/Lễ Đường.mp3",
-    mapUrl: "https://maps.app.goo.gl/yGSiw5LjDviwe3M29?g_st=ic",
+    mapUrl: "https://maps.app.goo.gl/a3nmRsTcRFUCNREH8",
 
     family: {
         groom: {
@@ -52,8 +52,8 @@ const weddingInfo = {
     banking: {
         main: {
             bank: "Vietcombank",
-            name: "HOANG ANH",
-            number: "0123456789",
+            name: "Dinh NGOC TIEN ",
+            number: "0221000063727",
             qr: "assets/images/1784171844747_4352902273896587581_4352902273896587581_c39c9ebeedf5d2f6ee05a3a04024fd19(1).jpg"
         }
     },
